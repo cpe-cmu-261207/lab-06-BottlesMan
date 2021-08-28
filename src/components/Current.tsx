@@ -50,7 +50,8 @@ const Current = () => {
             return (
                 <div className='text-center space-y-3'>
                     <p className='text-2xl font-semibold'>Current price</p>
-                    <p className='text-2xl font-semibold'></p>
+                    <p className='text-2xl'>{current?.bpi.THB.rate_float.toLocaleString()} THB</p>
+                    <p> (Last updated {current?.time.updated}) </p>
                 </div>
             )
         }
